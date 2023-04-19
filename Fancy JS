@@ -1,0 +1,8 @@
+const fancy = document.querySelector('.fancy');
+const colors = ['#ff2e2e', '#ffef35'];
+let currentColor = 0;
+
+setInterval(() => {
+  fancy.style.backgroundColor = colors[currentColor];
+  currentColor = (currentColor + 1) % colors.length;
+}, 1000);
